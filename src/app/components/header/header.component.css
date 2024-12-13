@@ -28,3 +28,12 @@ nav {
     align-items: baseline;
     column-gap: 10px;
 }
+
+
+a {
+    text-decoration: none;
+}
+
+a:not(.highlight) {
+    color: whitesmoke;
+}
