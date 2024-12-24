@@ -1,0 +1,15 @@
+<div class="all-products">
+  <div class="all-products-header">
+    <img src="/img/coffee-beans-heart.png" alt="Coffee beans forming a heart" />
+    <div class="all-products-title">
+      <h1>The best quality coffee beans for the best coffee brew</h1>
+    </div>
+    <img src="/img/white-coffee.png" alt="Coffee cup" />
+  </div>
+
+  <div class="all-products-container">
+    @for (product of products(); track product.id) {
+    <app-coffee-card [product]="product"></app-coffee-card>
+    }
+  </div>
+</div>

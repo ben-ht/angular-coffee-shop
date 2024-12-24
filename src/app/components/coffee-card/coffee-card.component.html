@@ -1,27 +1,33 @@
 <div class="coffee-card">
-    <div class="coffee-card-image">
-        <img src="/img/latte-macchiato.jpg" alt="Latte Macchiato">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#00000" fill-opacity="1" d="M0,160L48,144C96,128,192,96,288,117.3C384,139,480,213,576,218.7C672,224,768,160,864,122.7C960,85,1056,75,1152,80C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>    </div>
-    <div class="coffee-card-content">
-        <div class="coffee-card-title">
-            <h4>Latte Macchiato</h4>
-        </div>
-        <div class="coffee-card-description">
-            <p>A coffee drink made with espresso and steamed milk.</p>
-        </div>
-        <div class="coffee-card-rating">
-            <div class="stars">
-                <mat-icon class="highlight">star</mat-icon>
-                <mat-icon class="highlight">star</mat-icon>
-                <mat-icon class="highlight">star</mat-icon>
-                <mat-icon class="highlight">star</mat-icon>
-                <mat-icon>star</mat-icon>
-            </div>
-            <div class="price">
-                <span>$3.99</span>
-            </div>
-        </div>
-        <button mat-stroked-button>More</button>
+  <div class="coffee-card-image">
+    <img src="{{ product()?.image }}" alt="{{ product()?.name }}" />
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#00000"
+        fill-opacity="1"
+        d="M0,160L48,144C96,128,192,96,288,117.3C384,139,480,213,576,218.7C672,224,768,160,864,122.7C960,85,1056,75,1152,80C1248,85,1344,107,1392,117.3L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+      ></path>
+    </svg>
+  </div>
+  <div class="coffee-card-content">
+    <div class="coffee-card-title">
+      <h4>{{ product()?.name }}</h4>
     </div>
+    <div class="coffee-card-description">
+      <p>{{ product()?.description }}</p>
+    </div>
+    <div class="coffee-card-rating">
+      <div class="stars">
+        <mat-icon class="highlight">star</mat-icon>
+        <mat-icon class="highlight">star</mat-icon>
+        <mat-icon class="highlight">star</mat-icon>
+        <mat-icon class="highlight">star</mat-icon>
+        <mat-icon>star</mat-icon>
+      </div>
+      <div class="price">
+        <span>${{ product()?.price }}</span>
+      </div>
+    </div>
+    <button mat-stroked-button>More</button>
+  </div>
 </div>
-

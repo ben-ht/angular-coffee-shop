@@ -1,0 +1,17 @@
+.all-products-header {
+  background-color: rgb(53, 46, 32);
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+.all-products-header img {
+  width: 300px;
+}
+
+.all-products-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}

@@ -1,19 +1,27 @@
-@import url('https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Parkinsans:wght@300..800&display=swap");
 
-html, body { 
-    height: 100%;
-}
-
-body { 
-    margin: 0;
-    font-family: 'Parkinsans', sans-serif;
-    background-size: cover;
-    color: whitesmoke;
-    box-sizing: border-box;
-    background: rgb(37,36,35);
-    background: linear-gradient(165deg, rgba(37,36,35,1) 0%, rgba(38,34,28,1) 27%, rgb(43, 30, 11) 71%, rgb(41, 26, 10) 100%);
+body {
+  margin: 0;
+  font-family: "Parkinsans", sans-serif;
+  font-size: 1.3rem;
+  background-size: cover;
+  color: whitesmoke;
+  box-sizing: border-box;
+  background: rgb(37, 36, 35);
+  background: linear-gradient(
+    165deg,
+    rgba(37, 36, 35, 1) 0%,
+    rgba(38, 34, 28, 1) 27%,
+    rgb(43, 30, 11) 71%,
+    rgb(41, 26, 10) 100%
+  );
 }
 
 .highlight {
-    color: rgb(243, 190, 14);
+  color: rgb(243, 190, 14);
+}
+
+app-root {
+  display: block;
+  height: 100%;
 }
