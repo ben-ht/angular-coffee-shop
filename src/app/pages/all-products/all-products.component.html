@@ -6,7 +6,7 @@
     </div>
     <img src="/img/white-coffee.png" alt="Coffee cup" />
   </div>
-
+  <h3>{{ confirmationMessage() }}</h3>
   <div class="all-products-container">
     @for (product of products(); track product.id) {
     <app-coffee-card [product]="product"></app-coffee-card>

@@ -1,4 +1,4 @@
-<div class="coffee-card">
+<div class="coffee-card" (click)="openDialog()">
   <div class="coffee-card-image">
     <img src="{{ product()?.image }}" alt="{{ product()?.name }}" />
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -24,10 +24,12 @@
         <mat-icon class="highlight">star</mat-icon>
         <mat-icon>star</mat-icon>
       </div>
+    </div>
+    <div class="coffee-card-bottom">
       <div class="price">
         <span>${{ product()?.price }}</span>
       </div>
+      <button mat-stroked-button>Order</button>
     </div>
-    <button mat-stroked-button>More</button>
   </div>
 </div>

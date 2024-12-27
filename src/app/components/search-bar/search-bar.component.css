@@ -1,26 +1,7 @@
-.search-bar {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border: 1px solid whitesmoke;
-    border-radius: 40px;
-    padding: 3px 10px;
-}
-
-.search-bar input {
-    background: none;
-    border: none;
-    outline: none;
-    color: whitesmoke;
-    font-family: 'Parkinsans', sans-serif;
-    width: 150px;
-}
-
-.search-bar input::placeholder {
-    color: whitesmoke;
-    opacity: .8;
-}
-
 .search-icon {
-    transform: scale(0.8);
+  transform: scale(0.8);
+}
+
+.input {
+  padding: 3px 10px;
 }

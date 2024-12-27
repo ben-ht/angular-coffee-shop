@@ -1,0 +1,27 @@
+<td>
+  <mat-icon class="highlight" (click)="removeItemFromCart()">close</mat-icon>
+</td>
+<td class="cart-item-image">
+  <img
+    src="{{ cartItem()?.product?.image }}"
+    alt="{{ cartItem()?.product?.name }}"
+  />
+</td>
+<td>
+  <p>{{ cartItem()?.product?.name }}</p>
+</td>
+<td>
+  <p>${{ cartItem()?.product?.price }}</p>
+</td>
+<td>
+  <select [(ngModel)]="selectedQuantity" (change)="updateQuantity()">
+    @for (option of quantityOptions; track option) {
+    <option value="{{ option }}">
+      {{ option }}
+    </option>
+    }
+  </select>
+</td>
+<td>
+  <p>${{ itemSubtotal() }}</p>
+</td>

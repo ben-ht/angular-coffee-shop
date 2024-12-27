@@ -1,0 +1,49 @@
+<div class="coffee-details">
+  <div class="coffee-details-left">
+    <img src="{{ product.image }}" alt="{{ product.name }}" />
+  </div>
+  <div class="coffee-details-right">
+    <div class="coffee-details-title">
+      <h2>{{ product.name }}</h2>
+    </div>
+    <div class="price">
+      <span>${{ product.price }}</span>
+    </div>
+    <div class="coffee-details-description">
+      <p>{{ product.description }}</p>
+    </div>
+    <hr />
+    <div class="coffee-details-extra">
+      <h3>Size</h3>
+      <div class="coffee-details-sizes">
+        <div class="coffee-details-size">
+          <div class="coffee-details-size-info">
+            <h5>Tall</h5>
+            <span>+$0.70</span>
+          </div>
+          <div class="coffee-details-extra-radio">
+            <mat-radio-button></mat-radio-button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="coffee-details-bottom">
+      <div class="coffee-details-quantity">
+        <select name="quantity" id="quantity" #quantity>
+          @for (opt of quantityOptions; track opt) {
+          <option value="{{ opt }}">{{ opt }}</option>
+          }
+        </select>
+      </div>
+      <div class="coffee-details-buttons">
+        <button class="primary" [mat-dialog-close]="{ product, quantity}">
+          Add to Cart - ${{ product.price }}
+        </button>
+        <button class="secondary" [mat-dialog-close]="product.id">
+          See more
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

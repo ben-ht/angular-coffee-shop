@@ -21,7 +21,56 @@ body {
   color: rgb(243, 190, 14);
 }
 
-app-root {
-  display: block;
-  height: 100%;
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+button.primary {
+  background-color: rgb(243, 190, 14);
+  color: rgb(0, 0, 0);
+  margin-bottom: 5px;
+}
+
+button.secondary {
+  background-color: rgb(0, 0, 0);
+  color: rgb(243, 190, 14);
+  border: 1px solid rgb(243, 190, 14);
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid whitesmoke;
+  border-radius: 40px;
+}
+
+.input input {
+  background: none;
+  border: none;
+  outline: none;
+  color: whitesmoke;
+  font-family: "Parkinsans", sans-serif;
+  width: 150px;
+}
+
+.input input::placeholder {
+  color: whitesmoke;
+  opacity: 0.8;
+}
+
+select {
+  border-radius: 20px;
+  border: 1px solid whitesmoke;
+  padding: 5px;
+  background-color: transparent;
+  color: whitesmoke;
+  font-size: 1rem;
+  padding: 8px 20px;
+}
+
+select option {
+  background-color: rgb(0, 0, 0);
+  color: whitesmoke;
 }

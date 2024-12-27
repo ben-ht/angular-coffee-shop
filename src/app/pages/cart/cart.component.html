@@ -1,0 +1,36 @@
+<div class="cart-page">
+  <div class="cart">
+    <h4>Shopping cart</h4>
+    <table>
+      <thead>
+        <th></th>
+        <th></th>
+        <th>Product</th>
+        <th clas>Price</th>
+        <th>Quantity</th>
+        <th>Subtotal</th>
+      </thead>
+      <tbody>
+        @for (item of cartItems(); track item.product.id) {
+        <tr app-cart-item [cartItem]="item"></tr>
+        }
+      </tbody>
+    </table>
+  </div>
+  <div class="cart-total">
+    <h4>Cart total</h4>
+    <div class="coupon-container">
+      <label for="coupon">Coupon code</label>
+      <div class="input">
+        <input type="text" placeholder="Coupon code" id="coupon" />
+        <button class="coupon-btn">Apply coupon</button>
+      </div>
+    </div>
+    <hr />
+    <p>Subtotal: {{ totalPrice() }}</p>
+    <p>Total: {{ totalPrice() }}</p>
+    <button (click)="checkout()" class="primary checkout-btn">
+      Proceed to checkout
+    </button>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+.cart-item-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.cart-item-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+mat-icon {
+  cursor: pointer;
+}

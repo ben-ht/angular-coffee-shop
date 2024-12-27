@@ -1,0 +1,60 @@
+.coffee-details {
+  display: flex;
+  flex-direction: row;
+}
+
+.coffee-details-left {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.coffee-details-left img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.coffee-details-right {
+  width: 50%;
+  padding: 20px;
+}
+
+h2 {
+  margin-bottom: 0;
+}
+
+.price {
+  color: rgb(243, 190, 14);
+}
+
+.coffee-details-description {
+  font-size: 1rem;
+}
+
+.coffee-details-size {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.coffee-details-size-info h5 {
+  margin: 0;
+}
+
+.coffee-details-quantity {
+  margin: 20px 0;
+}
+
+button {
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  padding: 20px 0;
+  cursor: pointer;
+}

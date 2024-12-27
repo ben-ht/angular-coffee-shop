@@ -10,8 +10,10 @@
 }
 
 .all-products-container {
+  margin-top: 50px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
