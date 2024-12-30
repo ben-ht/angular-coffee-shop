@@ -38,4 +38,8 @@ export class CartService {
       this.cartItems().filter((item) => item !== cartItem)
     );
   }
+
+  clearCart() {
+    this.cartItems.set([]);
+  }
 }

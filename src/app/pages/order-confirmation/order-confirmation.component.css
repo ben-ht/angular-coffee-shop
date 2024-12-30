@@ -1,0 +1,31 @@
+h4 {
+  padding: 50px 0 0 50px;
+  font-weight: 300;
+}
+
+th {
+  font-weight: 500;
+  border-bottom: 1px solid #ffffff;
+  padding: 20px;
+}
+
+td {
+  padding: 20px;
+  border-bottom: 1px solid #ffffff;
+}
+
+td {
+  font-weight: 300;
+}
+
+.order-container {
+  width: 50%;
+  margin: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  vertical-align: middle;
+  text-align: center;
+}

@@ -1,4 +1,5 @@
 <div class="cart-page">
+  @if (cartItems().length > 0){
   <div class="cart">
     <h4>Shopping cart</h4>
     <table>
@@ -17,6 +18,16 @@
       </tbody>
     </table>
   </div>
+  } @else {
+  <div class="cart">
+    <h4>Your cart is empty</h4>
+    <p>
+      Browse our products here :
+      <a class="highlight" routerLink="/products">All products</a>
+    </p>
+  </div>
+  }
+
   <div class="cart-total">
     <h4>Cart total</h4>
     <div class="coupon-container">
@@ -27,8 +38,8 @@
       </div>
     </div>
     <hr />
-    <p>Subtotal: {{ totalPrice() }}</p>
-    <p>Total: {{ totalPrice() }}</p>
+    <p>Subtotal: ${{ totalPrice() }}</p>
+    <p>Total: ${{ totalPrice() }}</p>
     <button (click)="checkout()" class="primary checkout-btn">
       Proceed to checkout
     </button>

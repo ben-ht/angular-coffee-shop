@@ -10,9 +10,8 @@ import { NavigationEnd, Router } from '@angular/router';
   templateUrl: './all-products.component.html',
   styleUrl: './all-products.component.css',
 })
-export class AllProductsComponent implements OnInit {
+export class AllProductsComponent {
   private readonly productsService = inject(ProductsService);
-  private readonly router = inject(Router);
 
   products = signal<Product[]>([]);
   confirmationMessage = signal<string>('');
@@ -20,15 +19,6 @@ export class AllProductsComponent implements OnInit {
   constructor() {
     this.productsService.getAllProducts().subscribe((products) => {
       this.products.set(products);
-    });
-  }
-  ngOnInit(): void {
-    this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
-        const navigation = this.router.getCurrentNavigation();
-        const message = navigation?.extras.state?.['message'];
-        this.confirmationMessage.set(message);
-      }
     });
   }
 }
